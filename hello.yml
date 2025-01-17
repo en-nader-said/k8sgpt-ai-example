@@ -1,0 +1,23 @@
+---
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hello-world-deployment
+spec:
+  selector:
+    matchLabels:
+      app: hello-world
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: hello-world
+    spec:
+      containers:
+        # run an image that does not exist normally to simulate an error
+        - name: hello-world
+          image: hello-world-non-existing:latest
+          ports:
+            - containerPort: 4000
+---
