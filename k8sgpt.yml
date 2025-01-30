@@ -6,7 +6,7 @@ metadata:
 spec:
   ai:
     enabled: true
-    model: chanwit/kube-7b
+    model: <MODEL_NAME>
     backend: localai
     baseUrl: http://<OLLAMA_LOAD_BALANCER_IP>:11434/v1
     #    secret:
@@ -36,3 +36,4 @@ spec:
   #extraOptions:
   #   backstage:
   #     enabled: true
+---

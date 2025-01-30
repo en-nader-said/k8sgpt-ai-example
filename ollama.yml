@@ -1,6 +1,3 @@
----
-# website::tag::1:: Deploy the training/webapp Docker Container: https://hub.docker.com/r/training/webapp/
-
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -34,3 +31,4 @@ spec:
       targetPort: 11434
       port: 11434
   type: LoadBalancer
+---
