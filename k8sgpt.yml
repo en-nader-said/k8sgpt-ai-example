@@ -6,9 +6,9 @@ metadata:
 spec:
   ai:
     enabled: true
-    model: <MODEL_NAME>
+    model: llama3.2
     backend: localai
-    baseUrl: http://<OLLAMA_LOAD_BALANCER_IP>:11434/v1
+    baseUrl: http://ollama-service.ollama.svc.cluster.local:11434/v1
     #    secret:
 #      name: k8sgpt-sample-secret
 #      key: openai-api-key
